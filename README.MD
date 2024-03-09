@@ -11,14 +11,6 @@ The codes in the folder are named for the applicable scenarios. The Adult and CO
 
 The code contains data preprocessing, our method and the calculation of indicators. You can run these codes directly to get the experimental results.
 
-
-
-
-* FairMASK  - https://ieeexplore.ieee.org/document/9951398/ [2023] : 
-* LTDD - https://dl.acm.org/doi/pdf/10.1145/3510003.3510091 [2022] : https://github.com/fairnesstest/LTDD/tree/main
-* FairSMOTE - https://dl.acm.org/doi/10.1145/3468264.3468537 [2021] : 
-* Reweighing - https://link.springer.com/article/10.1007/s10115-011-0463-8 [2011]
-
 Fair-Smote: Proposed in the paper: Bias in Machine Learning Software: Why? How? What to Do? Fair-Smote is a pre-processing method that uses the modified SMOTE method to make the distribution of sensitive features in the data set consistent, and then deletes biased data through situation testing.
 
 We use the code they provided in the code repository: https://github.com/joymallyac/Fair-SMOTE
