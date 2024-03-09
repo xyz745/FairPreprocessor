@@ -1,8 +1,37 @@
-The Code of the following STATE OF THE ART is used in this work.
+FairPreprocesor: Achieving Fairness vias Handling Imbalanced Data through Synthetic Data
 
-* FairMASK  - https://ieeexplore.ieee.org/document/9951398/ [2023]
-* LTDD - https://dl.acm.org/doi/pdf/10.1145/3510003.3510091 [2022]
-* FairSMOTE - https://dl.acm.org/doi/10.1145/3468264.3468537 [2021]
+We use 9 datasets, all of which are widely used in fairness research: Adult, COMPAS, German Credit, Default, Heart Disease, Bank Marketing, Student Performance, MEPS15 and MEPS16. We provide these data sets in the "datasets" folder. For MEPS15 and MEPS16, they can be loaded through python's aif360 package:
+
+from aif360.datasets import MEPSDataset19,MEPSDataset21
+
+Codes for FairPreprocessor
+
+The replicate folder contains the codes to replicate our results. 
+The codes in the folder are named for the applicable scenarios. The Adult and COMPAS data sets include two protected attributes, so we divide them into two scenarios: Adult_sex (COMPAS_sex) and Adult_race (COMPAS_race).
+
+The code contains data preprocessing, our method and the calculation of indicators. You can run these codes directly to get the experimental results.
+
+
+
+
+* FairMASK  - https://ieeexplore.ieee.org/document/9951398/ [2023] : 
+* LTDD - https://dl.acm.org/doi/pdf/10.1145/3510003.3510091 [2022] : https://github.com/fairnesstest/LTDD/tree/main
+* FairSMOTE - https://dl.acm.org/doi/10.1145/3468264.3468537 [2021] : 
 * Reweighing - https://link.springer.com/article/10.1007/s10115-011-0463-8 [2011]
 
+Fair-Smote: Proposed in the paper: Bias in Machine Learning Software: Why? How? What to Do? Fair-Smote is a pre-processing method that uses the modified SMOTE method to make the distribution of sensitive features in the data set consistent, and then deletes biased data through situation testing.
+
+We use the code they provided in the code repository: https://github.com/joymallyac/Fair-SMOTE
+
+FairMask: Proposed in the paper: FairMask: Better Fairness via Model-Based Rebalancing of Protected Attributes. Fairway is a hybrid algorithm that combines pre-processing and post-processing methods. 
+
+We use the code they provided in the code repository: https://github.com/anonymous12138/biasmitigation 
+
+LTDD: Linear Regression Based Training Data Debugging. 
+ 
+Reweighing: Reweighing is a pre-processing method that calculates a weight value for each data point based on the expected probability and the observed probability, to help the unprivileged class have a greater chance of obtaining favorable prediction results.
+
+We use python's AIF360 module to achieve it:
+
+from aif360.algorithms.preprocessing import Reweighing
 
