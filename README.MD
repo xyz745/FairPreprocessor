@@ -1,4 +1,4 @@
-FairPreprocesor: Achieving Fairness vias Handling Imbalanced Data through Synthetic Data
+**FairPreprocesor: Achieving Fairness vias Handling Imbalanced Data through Synthetic Data**
 
 We use 9 datasets, all of which are widely used in fairness research: Adult, COMPAS, German Credit, Default, Heart Disease, Bank Marketing, Student Performance, MEPS15 and MEPS16. We provide these data sets in the "datasets" folder. For MEPS15 and MEPS16, they can be loaded through python's aif360 package:
 
