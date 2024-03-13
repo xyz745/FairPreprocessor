@@ -14,7 +14,8 @@ We use 9 datasets, all of which are widely used in fairness research: Adult, COM
 The replicate folder contains the codes to replicate our results. 
 The codes in the folder are named for the applicable scenarios. The Adult and COMPAS data sets include two protected attributes, so we divide them into two scenarios: Adult_sex (COMPAS_sex) and Adult_race (COMPAS_race).
 
-The code contains data preprocessing, our method and the calculation of indicators. You can run these codes directly to get the experimental results.
+-----------------------------------------------------
+-----------------------------------------------------
 
 Fair-Smote: Proposed in the paper: Bias in Machine Learning Software: Why? How? What to Do? Fair-Smote is a pre-processing method that uses the modified SMOTE method to make the distribution of sensitive features in the data set consistent, and then deletes biased data through situation testing.
 
