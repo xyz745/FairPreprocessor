@@ -8,9 +8,8 @@
 
 We use 9 datasets, all of which are widely used in fairness research: Adult, COMPAS, German Credit, Default, Heart Disease, Bank Marketing, Student Performance, MEPS15 and MEPS16. We provide these data sets in the "datasets" folder. For MEPS15 and MEPS16, they can be loaded through python's aif360 package:
 
-print(from aif360.datasets import MEPSDataset19,MEPSDataset21)
+<code>from aif360.datasets import MEPSDataset19,MEPSDataset21</code>
 
-Codes for FairPreprocessor
 
 The replicate folder contains the codes to replicate our results. 
 The codes in the folder are named for the applicable scenarios. The Adult and COMPAS data sets include two protected attributes, so we divide them into two scenarios: Adult_sex (COMPAS_sex) and Adult_race (COMPAS_race).
