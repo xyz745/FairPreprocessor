@@ -35,7 +35,7 @@ def fair_processor_samples(no_of_samples,df,df_name,X_train,y_train,protected_at
     #--------------------------------------------------------------------------------------------------------------
     #Logic to create synthetic data
 
-    while(k!=no_of_samples):
+    for _ in range(no_of_samples):
         
         f = .80 #cross over frequency
         parent_candidate, child_candidate_1 = get_ngbr(df, knn)      
@@ -56,7 +56,8 @@ def fair_processor_samples(no_of_samples,df,df_name,X_train,y_train,protected_at
             else:             
                 mutant.append(parent_candidate[key] + f * (child_candidate_1[key] - parent_candidate[key]))
                     #print('integer: x1 less than x2')  
-            k=k+1
+        total_data.append(mutant)
+            
                
         #--------------------------------------------------------------------------------------------------------------
 
