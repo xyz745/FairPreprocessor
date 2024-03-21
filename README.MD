@@ -36,3 +36,4 @@ We use the following python's AIF360 module to achieve it:
 
 <code>from aif360.algorithms.preprocessing import Reweighing</code>
 
+All codes are run on the Ubuntu Operating System. 
