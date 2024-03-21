@@ -16,8 +16,6 @@ The replicate folder contains the codes to replicate our results.
 The codes in the folder are named for the applicable scenarios. The Adult and COMPAS data sets include two protected attributes, so we divide them into two scenarios: Adult_sex (COMPAS_sex) and Adult_race (COMPAS_race).
 
 -----------------------------------------------------
------------------------------------------------------
-
 **Fair-Smote: Proposed in the paper: Bias in Machine Learning Software: Why? How? What to Do?**
 Fair-Smote is a pre-processing method that uses the modified SMOTE method to make the distribution of sensitive features in the data set consistent, and then deletes biased data through situation testing.
 We use the code they provided in the code repository: https://github.com/joymallyac/Fair-SMOTE
@@ -35,5 +33,7 @@ Reweighing is a pre-processing method that calculates a weight value for each da
 We use the following python's AIF360 module to achieve it:
 
 <code>from aif360.algorithms.preprocessing import Reweighing</code>
+
+-----------------------------------------------------
 
 All codes are run on the Ubuntu Operating System. 
